@@ -96,7 +96,7 @@ with field_history as (
 
     select 
         *,
-        {{ dbt_utils.generate_surrogate_key(['ticket_id','date_day'])}} as ticket_day_id
+        {{ dbt_utils.surrogate_key(['ticket_id','date_day'])}} as ticket_day_id
     from pivots
 
 )

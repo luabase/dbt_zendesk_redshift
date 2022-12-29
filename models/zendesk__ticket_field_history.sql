@@ -115,7 +115,7 @@ fill_values as (
 ), surrogate_key as (
 
     select
-        {{ dbt_utils.generate_surrogate_key(['date_day','ticket_id']) }} as ticket_day_id,
+        {{ dbt_utils.surrogate_key(['date_day','ticket_id']) }} as ticket_day_id,
         *
 
     from fix_null_values
