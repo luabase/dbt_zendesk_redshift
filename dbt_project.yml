@@ -57,6 +57,8 @@ vars:
     ticket_field_history_timeframe_years: 50 # how far back to pull tickets' field histories. default is everything
 
     using_domain_names:         False         #Disable if you are not using domain names
+    using_organization_tags:    False         #Disable if you are not using organization tags
 
   zendesk_source:
     using_domain_names:         False         #Disable if you are not using domain names
+    using_organization_tags:    False         #Disable if you are not using organization tags
