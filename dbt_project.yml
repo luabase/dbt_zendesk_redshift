@@ -26,6 +26,8 @@ models:
     utils:
       +materialized: ephemeral
 vars:
+  zendesk_database: FIVETRAN
+  zendesk_schema: ZENDESK 
   zendesk:
     ticket_field_history_columns: ['assignee_id', 'status', 'priority']
     ticket_field_history_updater_columns: []
@@ -53,3 +55,8 @@ vars:
 
     ticket_field_history_extension_months: 0 # how long to extend a ticket's field history past its closure date
     ticket_field_history_timeframe_years: 50 # how far back to pull tickets' field histories. default is everything
+
+    using_domain_names:         False         #Disable if you are not using domain names
+
+  zendesk_source:
+    using_domain_names:         False         #Disable if you are not using domain names
