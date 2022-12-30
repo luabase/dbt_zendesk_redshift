@@ -1,4 +1,5 @@
 name: 'zendesk'
+profile: 'definite-snowflake-demo'
 version: '0.10.0'
 
 config-version: 2
@@ -56,11 +57,11 @@ vars:
     ticket_field_history_extension_months: 0 # how long to extend a ticket's field history past its closure date
     ticket_field_history_timeframe_years: 50 # how far back to pull tickets' field histories. default is everything
 
-    using_domain_names:         False         #Disable if you are not using domain names
+    # using_domain_names:         False         #Disable if you are not using domain names
     using_organization_tags:    False         #Disable if you are not using organization tags
     using_ticket_form_history:  False  
 
   zendesk_source:
-    using_domain_names:         False         #Disable if you are not using domain names
+    # using_domain_names:         False         #Disable if you are not using domain names
     using_organization_tags:    False         #Disable if you are not using organization tags
     using_ticket_form_history:  False  
