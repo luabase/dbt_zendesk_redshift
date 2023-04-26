@@ -1,5 +1,5 @@
 name: 'zendesk'
-profile: 'definite-snowflake-demo'
+profile: 'definite-redshift-demo'
 version: '0.10.0'
 
 config-version: 2
@@ -27,8 +27,8 @@ models:
     utils:
       +materialized: ephemeral
 vars:
-  zendesk_database: FIVETRAN
-  zendesk_schema: ZENDESK 
+  zendesk_database: DEMO_DATA
+  zendesk_schema: FIVETRAN_ZENDESK 
   zendesk:
     ticket_field_history_columns: ['assignee_id', 'status', 'priority']
     ticket_field_history_updater_columns: []
